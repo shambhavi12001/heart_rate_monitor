@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Home</title>
+      <link href="stylesheets/style.css" rel="stylesheet">
+      <script src="javascripts/account.js" defer></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
+
+   <body>
+      <h1>Account</h1>
+      <nav>
+         <a href="login.html" id="logout">Logout</a>
+	 <a href="history.html">Weekly Report</a>
+      </nav>
+      
+
+      <div class="accountInfo">
+		   <div class="accTitle">Account Information</div>
+		   <div class="accInfoTable">
+		   <table>
+			<div class = "form">
+				<p> Email: </p> 
+				<p id="success"></p>
+				<p>
+					<label for="name">Full Name</label>
+				</p>
+				<p>
+					<input type="text" id="name">
+				</p>
+				<p>
+    					<label for="password">Password</label>
+  				</p>
+ 				<p>
+      					<input type="password" id="password">
+   				</p>
+				<p id="errors"></p>
+				<p>
+     					<input type="submit" id="submit" value="Update Profile">
+   				</p>
+			</div>
+		   </table>
+		   </div>
+		   </div>
+
+      <div class="accountInfo">
+		   <div class="accTitle">Registered Devices</div>
+		   <div class="accInfoTable">
+		   <table>
+            <tr>
+		         <th>Devices</th>
+               <td>
+		       <div class="device_form">
+				<p>
+					<label for="deviceID">Device ID</label>
+				</p>
+				<p>
+					<input type="text" id="deviceID">
+				</p>
+				<p>
+					<label for="accessToken">Access Token</label>
+				</p>
+				<p>
+					<input type="text" id="accessToken">
+				</p>
+		       </div>
+	       </td>
+               <th><button type="button" id="regDev">Add Device</button></th>
+		      </tr>
+		      <tr>
+		         <td>Device:</td>
+		         <td>
+				 <select name="device" id="removeDevice">
+				 </select>
+			 </td>
+               <td><button type="button" id="rmDevice">Remove</button></td>
+		      </tr>
+			<tr>
+                         <td>Device Time-of-Day Range:</td>
+                         <td>
+                                  <p>
+                           	      	 <select name="device" id="devices">
+                                	 </select>
+                                  </p>
+                          	 <p>
+                                	 <select name="startTime" id="start">
+                                      	 </select>
+                           	</p>
+                           	<p>
+                                 	<select name="endTime" id="end">
+                                 	</select> 
+                           	</p>
+                                 <p>
+                                        <label for="frequency">Frequency (millisecond)</label>
+                                </p>
+                                <p>
+                                        <input type="text" id="frequency">
+                                </p> 
+                         </td>
+               <td><button type="button" id="range">Submit</button></td>
+                      </tr>	     
+		   </table>
+		   </div>
+		</div>
+
+
+      <div class="devicePopup">
+         <div class="formPopup" id="popupForm">
+           <form class="formContainer">
+             <h2>Register Device</h2>
+             <label for="device">
+               <strong>Device</strong>
+             </label>
+             <input type="text" id="deviceID" placeholder="Device ID">
+             
+             <button type="register" class="btn">Register</button>
+             <button type="button" class="btn cancel">Close</button>
+           </form>
+         </div>
+       </div>
+
+       <input type="submit" class="btnLogOut" id="logOut" value="logout">
+   </body>
+   
+</html>

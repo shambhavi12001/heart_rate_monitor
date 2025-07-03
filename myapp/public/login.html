@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>User Registration</title>
+      <link href="stylesheets/style.css" rel="stylesheet">
+      <script src="javascripts/login.js" defer></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
+
+   <body>
+      <h1>Login</h1>
+
+      <nav>
+         <a href="index.html">Home</a> 
+         <a href="createaccount.html">Create Account</a> 
+         <a href="login.html">Login</a> 
+         
+      </nav>
+
+      <div class="form">
+   
+   <p>
+      <label for="email">Email</label>
+   </p>
+   <p>
+      <input type="email" id="email">
+   </p>
+   <p>
+      <label for="password">Password</label>
+   </p>
+   <p>
+      <input type="password" id="password">
+   </p>
+   
+   <p>
+      <input type="submit" class="logIn" id="submit" value="login">
+
+   </p>
+   </div>
+   <div id="formErrors">
+      <ul id="unLi">
+      <li>Missing null name.</li>
+      <li>Invalid or missing email address.</li>
+      <li>Password must be between 10 and 20 characters.</li>
+      <li>Password must contain at least one lowercase character.</li>
+      <li>Password must contain at least one uppercase character.</li>
+      <li>Password must contain at least one digit.</li>
+      <li>Password and confirmation password don't match.</li>
+       </ul> 
+   </div>
+   </body>
+</html>

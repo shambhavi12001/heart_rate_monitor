@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>User Registration</title>
+      <link href="stylesheets/style.css" rel="stylesheet">
+      <script src="javascripts/history.js" defer></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
+
+   <body>
+      <h1></h1>
+      <nav>
+         <a href="index.html">Home</a> 
+         <a href="login.html">Logout</a> 
+      </nav>
+
+	<select id="devices" name = "device"></select>
+        <button type="button" id="view">View Report</button>
+	<h1>Weekly Health View</h1>
+      <table id="healthHistory">
+          <tr>
+              <th>Day</th>
+              <th>Average Heart Rate</th>
+              <th>Minimum Heart Rate</th>
+              <th>Maximum Heart Rate</th>
+          </tr>
+	  <tr id="day1" onclick="rowClick(this)">
+              <td id="day1Date"></td>
+              <td id="day1Avg"></td>
+              <td id="day1Min"></td>
+              <td id="day1Max"></td>
+          </tr>
+          <tr id="day2" onclick="rowClick(this)">
+              <td id="day2Date"></td>
+              <td id="day2Avg"></td>
+              <td id="day2Min"></td>
+              <td id="day2Max"></td>
+          </tr>
+          <tr id="day3" onclick="rowClick(this)">
+              <td id="day3Date"></td>
+              <td id="day3Avg"></td>
+              <td id="day3Min"></td>
+              <td id="day3Max"></td>
+          </tr>
+          <tr id="day4" onclick="rowClick(this)">
+              <td id="day4Date"></td>
+              <td id="day4Avg"></td>
+              <td id="day4Min"></td>
+              <td id="day4Max"></td>
+          </tr>
+          <tr id="day5" onclick="rowClick(this)">
+              <td id="day5Date"></td>
+              <td id="day5Avg"></td>
+              <td id="day5Min"></td>
+              <td id="day5Max"></td>
+          </tr>
+          <tr id="day6" onclick="rowClick(this)">
+              <td id="day6Date"></td>
+              <td id="day6Avg"></td>
+              <td id="day6Min"></td>
+              <td id="day6Max"></td>
+          </tr>
+          <tr id="day7" onclick="rowClick(this)">
+              <td id="day7Date"></td>
+              <td id="day7Avg"></td>
+              <td id="day7Min"></td>
+              <td id="day7Max"></td>
+          </tr>
+          
+      </table>
+      </body>
+</html>

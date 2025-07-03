@@ -1,0 +1,280 @@
+.form {
+    /* Add some padding to the div to give the form some space within the container */
+    padding: 1em;
+  
+    /* Set the font size and family for the form to make it look sleek */
+    font-size: 16px;
+    font-family: sans-serif;
+  
+    /* Use the flexbox layout to align the inputs and labels within the */
+    width: 500px;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  title {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+  
+    /* Add some margin and padding to give the title some space */
+    margin: 0;
+    padding: 0.5em;
+
+  }
+  /* Style the labels within the form to be bold and aligned to the right of the inputs */
+  .form label {
+    font-weight: bold;
+    padding-right: 0.5em;
+  }
+  
+  /* Style the inputs within the form to have a consistent size and appearance */
+  .form input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type=time],
+  input[type=number] {
+    width: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type=submit] {
+    width: 200px;
+    background-color: #75bef5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #bfe5c1;
+  }
+  
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+h1 {
+    text-align: center;
+    color: black;
+}
+
+#intro {
+    font-family: sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: left;
+    color: #333;
+    margin: 2em 0;
+   
+  }
+
+  
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+#formErrors {
+    display: none;
+    color: red;
+    
+}
+
+#nameInvalid {
+    color: red;
+}
+
+#submit {
+    /* Set the button's dimensions and appearance */
+  height: 2em;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+
+  /* Add some padding and margin to the button to give it some space */
+  padding: 0.5em 1em;
+  margin: 1em 0;
+
+ 
+}
+
+.accountInfo {
+    padding-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+    display: block;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 1px;
+    padding-top: 10px;
+    box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+
+
+}
+
+.accTitle {
+ 
+    font-size: 11pt;
+    font-weight: bold;
+    color:black;
+    text-align: center;
+    background-color: lightblue;
+    padding: 15px;
+}
+
+.accInfoTable {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+table {
+    width: 100%;
+    box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+    text-align: center;
+}
+
+table td {
+    font-weight: lighter;
+    color: #444444;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px, solid, #f1f1f1;
+    text-align: left;
+}
+
+table td button {
+    font-weight: lighter;
+    color: #444444;
+    background-color: lightblue;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px, solid, #f1f1f1;
+    text-align: left;
+}
+
+table th {
+    font-size: 9pt;
+    font-weight: bold;
+    color: #777777;
+    padding: 10px;
+    border-bottom: 1px, solid, #f1f1f1;
+    text-align: left;
+}
+
+table th button {
+    font-size: 9pt;
+    font-weight: bold;
+    background-color: lightblue;
+    color: #777777;
+    padding: 10px;
+    border-bottom: 1px, solid, #f1f1f1;
+    text-align: left;
+}
+
+.formPopup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+  }
+
+  .formContainer {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .formContainer input[type=text],
+  .formContainer input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #eee;
+  }
+  .formContainer input[type=text]:focus,
+  .formContainer input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: lightblue;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover {
+    opacity: 1;
+  }
+
+  .popup {
+    display: none;
+  }
+
+  .names-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Style the individual name elements to have a consistent appearance */
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+ #rxdata{
+	display: none;
+}	
